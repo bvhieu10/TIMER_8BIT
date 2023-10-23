@@ -1,0 +1,5 @@
+# vsim -coverage -do {coverage save -onexit timer_count_up_clk2_test.v.ucdb; log -r /*;run -all; exit} -l timer_count_up_clk2_test.v.log -voptargs=+acc work.timer_count_up_clk2_test.v 
+# ** Error: (vsim-19) Failed to access library 'work.timer_count_up_clk2_test' at "work.timer_count_up_clk2_test".
+# 
+# No such file or directory. (errno = ENOENT)
+# Error loading design

@@ -1,0 +1,101 @@
+# vsim -coverage -do {coverage save -onexit timer_count_dw_clk4_test.ucdb; log -r /*;run -all; exit} -l timer_count_dw_clk4_test.log -voptargs=+acc work.timer_count_dw_clk4_test 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.timer_count_dw_clk4_test(fast)
+# Loading work.test_bench(fast)
+# Loading work.timer(fast)
+# Loading work.counter(fast)
+# Loading work.clock_select(fast)
+# Loading work.register(fast)
+# Loading work.ctr_logic(fast)
+# Loading work.system_signal(fast)
+# Loading work.cpu_model(fast)
+# coverage save -onexit timer_count_dw_clk4_test.ucdb 
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: DESKTOP-8521CKI  ProcessID: 2136
+# 
+#           Attempting to use alternate WLF file "./wlftgkx2xj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftgkx2xj
+# 
+# run -all 
+# ==================================
+# ========COUNT DW TEST=============
+# ==================================
+# --STEP1--
+# 
+# At time =    40, write_data TCR 
+# 
+# At 61 start writing wdata= ff to address= 0
+# At 121 write trafer has been finish
+# At 161 start writing wdata= 81 to address= 1
+# At 221 write trafer has been finish
+# At 261 start writing wdata= 31 to address= 1
+# At 321 write trafer has been finish
+# -----------------------------------
+# --STEP2-- 
+# 
+# At time =   321, wait UDF 
+# 
+# --STEP2.1--
+# 
+# At time = 20320, wait 250 clk_in, read_data TSR 
+# 
+# --STEP2.2--
+# 
+# At time = 20320, after 250 clk_in, read_data TSR 
+# 
+# At 20361 start reading rdata at address= 2
+# At 20420 rdata= 0
+# At 20421 read trafer has been finish
+# At time = 20421, TSR = 8'h00, NOT_UNDERFLOW --PASS--
+# 
+# ------------------------------------
+# 
+# --STEP3--
+# 
+# At time = 20800, after 256 clk_in, read_data TSR 
+# 
+# At 20841 start reading rdata at address= 2
+# At 20900 rdata= 0
+# At 20901 read trafer has been finish
+# At time = 20901, TSR = 8'h00, NOT_UNDERFLOW --FAIL--
+# 
+# ------------------------------------
+# 
+# --STEP4--
+# 
+# At time = 20901, clear TSR 
+# 
+# At 20941 start writing wdata= 0 to address= 2
+# At 21001 write trafer has been finish
+# ------------------------------------
+# 
+# --STEP5--
+# 
+# At time = 21001, read_data TSR 
+# 
+# At 21041 start reading rdata at address= 2
+# At 21100 rdata= 0
+# At 21101 read trafer has been finish
+# At time = 21101, TSR = 8'h00 
+# 
+# BIT UNDERFLOW CLEAR --PASS-- 
+# 
+# --------------------------------
+# =============================
+# =========TEST FAIL===========
+# =============================

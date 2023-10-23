@@ -1,0 +1,6 @@
+# vsim -coverage -do {coverage save -onexit timer_count_ud_clk8_test.ucdb; log -r /*;run -all; exit} -l timer_count_ud_clk8_test.log -voptargs=+acc work.timer_count_ud_clk8_test 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: Failed to find design unit work.timer_count_ud_clk8_test.
+# Optimization failed
+# Error loading design

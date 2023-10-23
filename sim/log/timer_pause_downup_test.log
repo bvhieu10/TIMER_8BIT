@@ -1,0 +1,114 @@
+# vsim -coverage -do {coverage save -onexit timer_pause_downup_test.ucdb; log -r /*;run -all; exit} -l timer_pause_downup_test.log -voptargs=+acc work.timer_pause_downup_test 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.timer_pause_downup_test(fast)
+# Loading work.test_bench(fast)
+# Loading work.timer(fast)
+# Loading work.counter(fast)
+# Loading work.clock_select(fast)
+# Loading work.register(fast)
+# Loading work.ctr_logic(fast)
+# Loading work.system_signal(fast)
+# Loading work.cpu_model(fast)
+# coverage save -onexit timer_pause_downup_test.ucdb 
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: DESKTOP-8521CKI  ProcessID: 2136
+# 
+#           Attempting to use alternate WLF file "./wlftw5hzt4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw5hzt4
+# 
+# run -all 
+# =====================================
+# =====COUNT DOWN PAUSE UP TEST========
+# =====================================
+# 
+# -STEP1- 
+# 
+# At time =   100, write_data TDR 
+# 
+# At 121 start writing wdata= ff to address= 0
+# At 181 write trafer has been finish
+# At time =   181, write_data TCR to LOAD 
+# 
+# At 221 start writing wdata= 80 to address= 1
+# At 281 write trafer has been finish
+# At time =   281, write_data TCR to start count 
+# 
+# At 321 start writing wdata= 30 to address= 1
+# At 381 write trafer has been finish
+# ----------------------------------
+# 
+# -STEP2-
+# 
+# At time =   381, wait UDF 
+# 
+# ----------------------------------
+# 
+# -STEP3.1-
+# 
+# At time =  8380, write_data TCR 
+# 
+# At 8421 start writing wdata= 0 to address= 1
+# At 8481 write trafer has been finish
+# -STEP3.2-
+# 
+# At time =  8981, write_data TCR 
+# 
+# At 9021 start writing wdata= 10 to address= 1
+# At 9081 write trafer has been finish
+# ----------------------------------
+# 
+# -STEP4-
+# 
+# At time =  9081, wait 56 clk_in 
+# 
+# ----------------------------------
+# 
+# -STEP5-
+# 
+# At time = 19320, after 56 clk_in, read_data TSR 
+# 
+# At 19361 start reading rdata at address= 2
+# At 19420 rdata= 1
+# At 19421 read trafer has been finish
+# At time = 19421, TSR = 8'h01, OVERFLOW --PASS--
+# 
+# ------------------------------------
+# 
+# --STEP6--
+# 
+# At time = 19421, clear TSR 
+# 
+# At 19461 start writing wdata= 0 to address= 2
+# At 19521 write trafer has been finish
+# ------------------------------------
+# 
+# --STEP7--
+# 
+# At time = 19521, read_data TSR 
+# 
+# At 19561 start reading rdata at address= 2
+# At 19620 rdata= 0
+# At 19621 read trafer has been finish
+# At time = 19621, TSR = 8'h00 
+# 
+# BIT OVERFLOW CLEAR --PASS-- 
+# 
+# --------------------------------
+# =============================
+# =========TEST PASS===========
+# =============================

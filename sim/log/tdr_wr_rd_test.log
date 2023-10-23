@@ -1,0 +1,200 @@
+# vsim -coverage -do {coverage save -onexit tdr_wr_rd_test.ucdb; log -r /*;run -all; exit} -l tdr_wr_rd_test.log -voptargs=+acc work.tdr_wr_rd_test 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  Questa Sim-64
+# //  Version 10.2c Unknown Platform Jul 19 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.tdr_wr_rd_test(fast)
+# Loading work.test_bench(fast)
+# Loading work.timer(fast)
+# Loading work.counter(fast)
+# Loading work.clock_select(fast)
+# Loading work.register(fast)
+# Loading work.ctr_logic(fast)
+# Loading work.system_signal(fast)
+# Loading work.cpu_model(fast)
+# coverage save -onexit tdr_wr_rd_test.ucdb 
+#  log -r /* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Admin  Hostname: DESKTOP-8521CKI  ProcessID: 2136
+# 
+#           Attempting to use alternate WLF file "./wlftrkrkgs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrkrkgs
+# 
+# run -all 
+# =========================================
+# ==========TEST WRITE READ TDR============
+# =========================================
+# 
+# Test No.   1
+# At 121 start writing wdata= 24 to address= 0
+# At 181 write trafer has been finish
+# At 221 start reading rdata at address= 0
+# At 280 rdata= 24
+# At 281 read trafer has been finish
+# At time  281, wdata = 8'h24, rdata = 8'h24, -- PASS -- 
+# 
+# Test No.   2
+# At 321 start writing wdata= 81 to address= 0
+# At 381 write trafer has been finish
+# At 421 start reading rdata at address= 0
+# At 480 rdata= 81
+# At 481 read trafer has been finish
+# At time  481, wdata = 8'h81, rdata = 8'h81, -- PASS -- 
+# 
+# Test No.   3
+# At 521 start writing wdata= 9 to address= 0
+# At 581 write trafer has been finish
+# At 621 start reading rdata at address= 0
+# At 680 rdata= 9
+# At 681 read trafer has been finish
+# At time  681, wdata = 8'h09, rdata = 8'h09, -- PASS -- 
+# 
+# Test No.   4
+# At 721 start writing wdata= 63 to address= 0
+# At 781 write trafer has been finish
+# At 821 start reading rdata at address= 0
+# At 880 rdata= 63
+# At 881 read trafer has been finish
+# At time  881, wdata = 8'h63, rdata = 8'h63, -- PASS -- 
+# 
+# Test No.   5
+# At 921 start writing wdata= d to address= 0
+# At 981 write trafer has been finish
+# At 1021 start reading rdata at address= 0
+# At 1080 rdata= d
+# At 1081 read trafer has been finish
+# At time 1081, wdata = 8'h0d, rdata = 8'h0d, -- PASS -- 
+# 
+# Test No.   6
+# At 1121 start writing wdata= 8d to address= 0
+# At 1181 write trafer has been finish
+# At 1221 start reading rdata at address= 0
+# At 1280 rdata= 8d
+# At 1281 read trafer has been finish
+# At time 1281, wdata = 8'h8d, rdata = 8'h8d, -- PASS -- 
+# 
+# Test No.   7
+# At 1321 start writing wdata= 65 to address= 0
+# At 1381 write trafer has been finish
+# At 1421 start reading rdata at address= 0
+# At 1480 rdata= 65
+# At 1481 read trafer has been finish
+# At time 1481, wdata = 8'h65, rdata = 8'h65, -- PASS -- 
+# 
+# Test No.   8
+# At 1521 start writing wdata= 12 to address= 0
+# At 1581 write trafer has been finish
+# At 1621 start reading rdata at address= 0
+# At 1680 rdata= 12
+# At 1681 read trafer has been finish
+# At time 1681, wdata = 8'h12, rdata = 8'h12, -- PASS -- 
+# 
+# Test No.   9
+# At 1721 start writing wdata= 1 to address= 0
+# At 1781 write trafer has been finish
+# At 1821 start reading rdata at address= 0
+# At 1880 rdata= 1
+# At 1881 read trafer has been finish
+# At time 1881, wdata = 8'h01, rdata = 8'h01, -- PASS -- 
+# 
+# Test No.  10
+# At 1921 start writing wdata= d to address= 0
+# At 1981 write trafer has been finish
+# At 2021 start reading rdata at address= 0
+# At 2080 rdata= d
+# At 2081 read trafer has been finish
+# At time 2081, wdata = 8'h0d, rdata = 8'h0d, -- PASS -- 
+# 
+# Test No.  11
+# At 2121 start writing wdata= 76 to address= 0
+# At 2181 write trafer has been finish
+# At 2221 start reading rdata at address= 0
+# At 2280 rdata= 76
+# At 2281 read trafer has been finish
+# At time 2281, wdata = 8'h76, rdata = 8'h76, -- PASS -- 
+# 
+# Test No.  12
+# At 2321 start writing wdata= 3d to address= 0
+# At 2381 write trafer has been finish
+# At 2421 start reading rdata at address= 0
+# At 2480 rdata= 3d
+# At 2481 read trafer has been finish
+# At time 2481, wdata = 8'h3d, rdata = 8'h3d, -- PASS -- 
+# 
+# Test No.  13
+# At 2521 start writing wdata= ed to address= 0
+# At 2581 write trafer has been finish
+# At 2621 start reading rdata at address= 0
+# At 2680 rdata= ed
+# At 2681 read trafer has been finish
+# At time 2681, wdata = 8'hed, rdata = 8'hed, -- PASS -- 
+# 
+# Test No.  14
+# At 2721 start writing wdata= 8c to address= 0
+# At 2781 write trafer has been finish
+# At 2821 start reading rdata at address= 0
+# At 2880 rdata= 8c
+# At 2881 read trafer has been finish
+# At time 2881, wdata = 8'h8c, rdata = 8'h8c, -- PASS -- 
+# 
+# Test No.  15
+# At 2921 start writing wdata= f9 to address= 0
+# At 2981 write trafer has been finish
+# At 3021 start reading rdata at address= 0
+# At 3080 rdata= f9
+# At 3081 read trafer has been finish
+# At time 3081, wdata = 8'hf9, rdata = 8'hf9, -- PASS -- 
+# 
+# Test No.  16
+# At 3121 start writing wdata= c6 to address= 0
+# At 3181 write trafer has been finish
+# At 3221 start reading rdata at address= 0
+# At 3280 rdata= c6
+# At 3281 read trafer has been finish
+# At time 3281, wdata = 8'hc6, rdata = 8'hc6, -- PASS -- 
+# 
+# Test No.  17
+# At 3321 start writing wdata= c5 to address= 0
+# At 3381 write trafer has been finish
+# At 3421 start reading rdata at address= 0
+# At 3480 rdata= c5
+# At 3481 read trafer has been finish
+# At time 3481, wdata = 8'hc5, rdata = 8'hc5, -- PASS -- 
+# 
+# Test No.  18
+# At 3521 start writing wdata= aa to address= 0
+# At 3581 write trafer has been finish
+# At 3621 start reading rdata at address= 0
+# At 3680 rdata= aa
+# At 3681 read trafer has been finish
+# At time 3681, wdata = 8'haa, rdata = 8'haa, -- PASS -- 
+# 
+# Test No.  19
+# At 3721 start writing wdata= e5 to address= 0
+# At 3781 write trafer has been finish
+# At 3821 start reading rdata at address= 0
+# At 3880 rdata= e5
+# At 3881 read trafer has been finish
+# At time 3881, wdata = 8'he5, rdata = 8'he5, -- PASS -- 
+# 
+# Test No.  20
+# At 3921 start writing wdata= 77 to address= 0
+# At 3981 write trafer has been finish
+# At 4021 start reading rdata at address= 0
+# At 4080 rdata= 77
+# At 4081 read trafer has been finish
+# At time 4081, wdata = 8'h77, rdata = 8'h77, -- PASS -- 
+# =============================
+# =========TEST PASS===========
+# =============================

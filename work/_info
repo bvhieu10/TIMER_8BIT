@@ -1,0 +1,48 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/questasim64_10.2c/examples
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+vclock_select
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+I?eJRTY9`T2=30;Aac0MgV3
+Z1 dD:/SEMICON_SOURE/BAITAP/TIMER
+w1693485982
+8D:/SEMICON_SOURE/BAITAP/TIMER/div_clock.v
+FD:/SEMICON_SOURE/BAITAP/TIMER/div_clock.v
+L0 1
+Z2 OL;L;10.2c;57
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 GQ6gh^7EFYAC@aOLfDkHz2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_SOURE/BAITAP/TIMER/div_clock.v|
+!i10b 1
+!s108 1693486067.132000
+!s107 D:/SEMICON_SOURE/BAITAP/TIMER/div_clock.v|
+!i111 0
+vtb_div_clock
+Z4 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+31
+IUPlfb`PlVh;20fh>fHBRJ0
+R1
+w1693486057
+8D:/SEMICON_SOURE/BAITAP/TIMER/tb_div_clock.v
+FD:/SEMICON_SOURE/BAITAP/TIMER/tb_div_clock.v
+L0 1
+R2
+R3
+!s85 0
+!s100 4RC?C;0c4CdYebWM:N]VO2
+!s90 -reportprogress|300|-work|work|-vopt|D:/SEMICON_SOURE/BAITAP/TIMER/tb_div_clock.v|
+!s108 1693486066.661000
+!s107 D:/SEMICON_SOURE/BAITAP/TIMER/tb_div_clock.v|
+!i10b 1
+!i111 0

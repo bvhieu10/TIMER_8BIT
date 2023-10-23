@@ -1,0 +1,4 @@
+# vsim -coverage -do {coverage save -onexit .ucdb; log -r /*;run -all; exit} -l .log -voptargs=+acc work. 
+# ** Error: (vsim-11) Could not find work.<NULL>.
+# 
+# Error loading design
